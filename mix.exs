@@ -4,7 +4,7 @@ defmodule Islands.Client.Wait.MixProject do
   def project do
     [
       app: :islands_client_wait,
-      version: "0.1.6",
+      version: "0.1.7",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       name: "Islands Client Wait",
@@ -48,7 +48,7 @@ defmodule Islands.Client.Wait.MixProject do
     [
       {:mix_tasks,
        github: "RaymondLoranger/mix_tasks", only: :dev, runtime: false},
-      {:persist_config, "~> 0.1"},
+      {:persist_config, "~> 0.2", runtime: false},
       {:io_ansi_plus, "~> 0.1"},
       {:islands_engine, "~> 0.2"},
       {:islands_state, "~> 0.1"},
