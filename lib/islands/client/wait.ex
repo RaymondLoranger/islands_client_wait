@@ -13,6 +13,9 @@ defmodule Islands.Client.Wait do
   alias Islands.Engine
   alias Islands.State, as: StateMachine
 
+  @doc """
+  Waits for a game state.
+  """
   @spec wait_for(State.t(), StateMachine.game_state(), String.t()) :: State.t()
   def wait_for(state, game_state, phrase) do
     ANSI.puts([
